@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div align='center'>
+  <div class="alert alert-info">
+    <strong>Info!</strong> Load CNN model by pressing button below
+  </div>
+    <form action="{{ url_for('setup') }}" method="POST">
+        <div class="form-group">
+            <label class="btn btn-primary" >
+                LOAD MODEL<input type="submit"  value="load_model" style="display:none;">
+            </label>
+        </div>
+    </form>
+</div>
+{% endblock %}

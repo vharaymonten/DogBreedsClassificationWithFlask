@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<div align='center'>
+  <h1>Dog Breeds Predictor</h1>
+  <p>Given any image i will predict what dog breeds the dog in image is in image </p>
+  <div>
+    <br>
+    <br>
+    <h2>Upload your image</h2>
+      <form action="/predict" method="post" enctype="multipart/form-data" >
+         <span class="btn btn-default btn-file">
+           Browse <input type="file" name="image">
+         </span>
+       <input type="submit" value="Predict" class="btn btn-primary">
+    </form>
+  </div>
+  <br>
+
+  <div>
+
+    {% if post_data %}
+      <h3>REPORT</h3>
+      <img class="img-thumbnail" src={{post_data.fp}} width=300px height=300px>
+      <br>
+      <span>{{post_data.messages}}</span>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}
