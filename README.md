@@ -1,6 +1,6 @@
 # Overview
 
-In this project submission, i've implemented Transfer Learning and built Convulutional Neural Network (CNN) to classify 133 breeds of dog. Given any image by user, if human is detected by the algorithm, it tells what breed resemble to human in the image, then put dog ears on its head (snapchat like filters). If Dog is detected, it also tells what breed most closest to the dog in the image. Probability of being predicted breed will be shown. For more friendlier usage than using CLI, i've deployed the classifier to Web Application with Flask.  
+In this project submission, i've implemented Transfer Learning and built Convulutional Neural Network (CNN) to classify 133 breeds of dog. Given any image by user, if human is detected by the algorithm, it tells what breed resemble to human in the image, then put dog ears on its head (snapchat like filters). If Dog is detected, it also tells what breed most closest to the dog in the image. Probability of being predicted breed will be shown. For more friendlier usage than using CLI, i've turned the classifier into Web Application with Flask.  
 
 <img src=http://oi66.tinypic.com/2d2h9o2.jpg>
 
