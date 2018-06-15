@@ -1,0 +1,2 @@
+cd dog-project
+python3 app.py
