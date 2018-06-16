@@ -12151,8 +12151,8 @@ There are 836 test dog images.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 2:</strong> This algorithmic choice necessitates that we communicate to the user that we accept human images only when they provide a clear view of a face (otherwise, we risk having unneccessarily frustrated users!). In your opinion, is this a reasonable expectation to pose on the user? If not, can you think of a way to detect humans in images that does not necessitate an image with a clearly presented face?</p>
-<p><strong>Answer:</strong></p>
-<p>We don't want the users to be asked must to provide high quality image or clear image to be detected. The main problem is the classifier can't detect edges on the face due to unclear image feeded as input. Therefore, image preprocessing is needed to make input image more detectable. Blurring and Denoising image are proven can improve many face recognation performance. Denoising the image will remove unnecessary informations, then image is blured more prior to edge detection.</p>
+<p><strong>Answer:</strong>
+I believe that Haar Cascade Classifier is enough for face detection. The advantage of using this algorithm is works much faster than CNN. But it has weakness, it depends on image quality, low quality image may not detectable by this algorithm. We don't want the users to be asked must to provide high quality image or clear image to be detected. The main problem is the classifier can't detect edges and other features on the face due to unclear image feeded as input. The thing we can do before feeding it to Haar Cascasde Classifier is image preprocessing is needed to make input image more detectable. Blurring and Denoising image are proven can improve many face recognation performance. Denoising the image will remove unnecessary informations, then image is blured more prior to edge detection.</p>
 
 </div>
 </div>
