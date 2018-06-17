@@ -23,8 +23,8 @@ def wear_dog_ears(ears, face, x,y,w,h):
     face_width = w
     face_height = h
 
-    ears_width = int(face_width*1.75)+1
-    ears_height = int(0.75*face_height)+1
+    ears_width = int(face_width*1.25)+1
+    ears_height = int(0.15*face_height)+1
     ears = cv2.resize(ears,(ears_width,ears_height))
 
     for row in range(ears_height):
@@ -32,7 +32,7 @@ def wear_dog_ears(ears, face, x,y,w,h):
             for channel in range(3):
                 #Prevent white values to overwrite pixels in image
                 if ears[row][col][channel] < 235:
-                    face[y+row-int(0.325*face_height)][x+col-5][channel] = ears[row][col][channel]
+                    face[y+row-int(0.2*face_height)][x+col-3][channel] = ears[row][col][channel]
     return face
 
 def save_image(fp, array):
@@ -56,13 +56,13 @@ def write_report(**kwargs):
         message = '''
         BREED                   : {}\n
         PROBABILITY             : {}%\n
-        PUT EARS                : {}\n
+        HUMAN                   : {}\n
         '''.format(dogname,proba[:4],"NO")
     else:
         message =  '''
         RESEMBELING BREED       : {}\n
         PROBABILITY             : {}%\n
-        PUT EARS                : {}\n
+        HUMAN                   : {}\n
         '''.format(dogname,proba[:4],"YES")
 
     return {'fp':fp,'messages':message}

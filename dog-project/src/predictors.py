@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-with open('dog_names.txt', 'r') as f:
+with open('etc/dog_names.txt', 'r') as f:
     dog_names = f.read()
     dog_names = dog_names.split('\n')
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt.xml')
