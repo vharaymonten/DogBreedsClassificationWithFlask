@@ -4,10 +4,15 @@ In this project submission, i've implemented Transfer Learning and built Convulu
 
 <img src=http://oi66.tinypic.com/2d2h9o2.jpg>
 
+#Datasets
+
 # Original Code
+For datasets and orignal code you can find it here
 <a href=https://github.com/udacity/dog-project>Udacity Dog Project</a>
 
 # Refrences used in this project
+Great tutorial how to deploy Keras model  
 <a href=https://github.com/udacity/dog-project> Siraj Raval - Deploy keras model to production</a>
 
+If you want learn about implementing snapchat filters with opencv
 <a href=https://github.com/charlielito/snapchat-filters-opencv> charlielito - Snapchat like filters </a>
